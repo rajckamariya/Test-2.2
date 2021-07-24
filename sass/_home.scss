@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-template-columns: 9% 56% 35%;
+  grid-template-rows: max-content auto;
+  background-color: $color-back;
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 15% 50% 35%;
+  }
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+}
+.navigation {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+.project {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: $color-white;
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    margin-right: 2rem;
+  }
+}
+
+.chat-box {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: unset;
+    grid-column: unset;
+    position: fixed;
+    background: white;
+    border-radius: 2rem;
+    width: 30rem;
+    z-index: 10;
+    height: 4rem;
+    bottom: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    right: 4rem;
+    box-shadow: 1rem 1rem 3rem rgba($color-grey-dark-1, 0.5);
+    transition: all 0.4s;
+    &:hover {
+      height: 50rem;
+    }
+  }
+}
+
+.chat-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chat-box {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

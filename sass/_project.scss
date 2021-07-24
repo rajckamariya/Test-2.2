@@ -1,0 +1,161 @@
+.project {
+  padding: 5rem;
+  border-radius: 6rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  &__overview {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    justify-content: space-between;
+  }
+  &__card {
+    flex: 0 0 30rem;
+    height: 30rem;
+    border-radius: 4rem;
+    margin-bottom: 6rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 40%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 100%;
+    }
+    &--white {
+      background-color: white;
+      box-shadow: 1rem 1rem 3rem rgba($color-grey-dark-1, 0.2);
+    }
+    &--orange {
+      background-color: $color-orange-light;
+      position: relative;
+      &::before {
+        content: "";
+        width: 80%;
+        height: 0.7rem;
+        background-color: $color-orange-light;
+        border-radius: 6rem;
+        display: block;
+        position: absolute;
+        bottom: -1.4rem;
+        left: 10%;
+      }
+      &::after {
+        content: "";
+        width: 65%;
+        height: 0.7rem;
+        background-color: $color-orange-light;
+        border-radius: 6rem;
+        display: block;
+        position: absolute;
+        bottom: -2.8rem;
+        left: 17.5%;
+      }
+    }
+    &--green {
+      background-color: $color-green-light;
+    }
+    &--pink {
+      background-color: $color-pink-light;
+    }
+  }
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+  &__action {
+    font-size: 1rem;
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__progress {
+    padding: 1rem 3rem;
+  }
+  &__percent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    &--grey {
+      border-top: 1px solid $color-grey-dark-2;
+    }
+    &--white {
+      border-top: 1px solid $color-white;
+    }
+  }
+  &__member {
+    display: flex;
+    align-items: center;
+  }
+  &__photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: -1rem;
+    border: 0.3rem solid $color-white;
+  }
+}
+
+.overview {
+  &__text {
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 3rem;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-basis: 90%;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 100%;
+      display: flex;
+    }
+    flex: 0 0 25%;
+  }
+}
+.list {
+  &__style {
+    display: flex;
+    flex-basis: 10%;
+    align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+  &__icon {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    > i {
+      font-size: 1.8rem;
+    }
+  }
+}

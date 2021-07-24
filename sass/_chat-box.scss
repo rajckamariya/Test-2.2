@@ -1,0 +1,100 @@
+.chat-box {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 2px solid rgba($color-grey-dark-2, 0.5);
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    justify-content: space-between;
+  }
+  &__scroll_icon {
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+    width: 4rem;
+    height: 4rem;
+    display: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    > i {
+      font-size: 2rem;
+    }
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > i {
+      font-size: 2rem;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  &__card {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem;
+    }
+  }
+  &__card:hover {
+    transform: scale(1.05) translateX(3rem);
+    background-color: white;
+    box-shadow: 1rem 1rem 3rem rgba($color-grey-dark-1, 0.2);
+    @media only screen and (max-width: $bp-small) {
+      transform: none;
+    }
+  }
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgba($color-grey-dark-2, 0.5);
+    border-bottom: 1px solid rgba($color-grey-dark-2, 0.5);
+  }
+  &__photo {
+    display: flex;
+    margin: auto;
+    flex-basis: 15%;
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 1rem;
+    }
+  }
+  &__image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__details {
+    flex-basis: 85%;
+  }
+  &__heading-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__message {
+    font-size: 1.4rem;
+    color: rgba($color-grey-dark-1, 0.5);
+    font-weight: 500;
+  }
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

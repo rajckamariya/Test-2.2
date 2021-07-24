@@ -1,0 +1,59 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  > * {
+    margin: 1rem;
+  }
+  &__action {
+    width: 4rem;
+    height: 0.2rem;
+    position: relative;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+    border-radius: 50%;
+    &::after {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      background-color: $color-black;
+      transform: translateY(0.8rem);
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      background-color: $color-black;
+      transform: translateY(-0.8rem);
+    }
+  }
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $color-black;
+    cursor: pointer;
+    &--active {
+      color: $color-white;
+      background-color: $color-black;
+    }
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+    > i {
+      font-size: 3rem;
+    }
+  }
+}
