@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     > i {
-      font-size: 2rem;
+      font-size: 5rem;
     }
   }
   &__icon {
@@ -52,7 +52,7 @@
     }
   }
   &__card:hover {
-    transform: scale(1.05) translateX(3rem);
+    transform: scale(1.05) translateX(2rem);
     background-color: white;
     box-shadow: 1rem 1rem 3rem rgba($color-grey-dark-1, 0.2);
     @media only screen and (max-width: $bp-small) {
@@ -97,4 +97,10 @@
     display: flex;
     justify-content: flex-end;
   }
+}
+.sibling-hover:active {
+  display: none;
+}
+.sibling-hover:active ~ .sibling-display {
+  display: block;
 }
