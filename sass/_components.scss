@@ -73,28 +73,37 @@
 .progress-value {
   border-radius: 100px;
   height: 7px;
+
   &--90 {
+    animation: ninty 5s;
     width: 90%;
   }
   &--80 {
+    animation: eighty 5s;
     width: 80%;
   }
   &--70 {
+    animation: seventy 5s;
     width: 70%;
   }
   &--60 {
+    animation: sixty 5s;
     width: 60%;
   }
   &--50 {
+    animation: fifty 5s;
     width: 50%;
   }
   &--40 {
+    animation: forty 5s;
     width: 40%;
   }
   &--30 {
+    animation: thirty 5s;
     width: 30%;
   }
   &--20 {
+    animation: twenty 5s;
     width: 20%;
   }
 }

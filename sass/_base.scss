@@ -35,6 +35,10 @@ $bp-small: 37.5em; //600px
   margin: 0;
   box-sizing: inherit;
 }
+::selection {
+  color: $color-white;
+  background-color: $color-black;
+}
 html {
   font-size: 62.5%; //1rem=10px
   @media only screen and (max-width: $bp-largest) {

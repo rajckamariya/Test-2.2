@@ -5,6 +5,10 @@
   margin: 0;
   box-sizing: inherit; }
 
+::selection {
+  color: #ffffff;
+  background-color: #000000; }
+
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
@@ -50,6 +54,60 @@ body {
 .pb-2 {
   margin-left: 2rem;
   font-size: 0.9rem !important; }
+
+@keyframes ninty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@keyframes eighty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } }
+
+@keyframes seventy {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+
+@keyframes sixty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+
+@keyframes fifty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 50%; } }
+
+@keyframes forty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 40%; } }
+
+@keyframes thirty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 30%; } }
+
+@keyframes twenty {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
+
+@keyframes ten {
+  0% {
+    width: 0%; }
+  100% {
+    width: 10%; } }
 
 .circle-plus {
   width: 4rem;
@@ -107,20 +165,28 @@ body {
   border-radius: 100px;
   height: 7px; }
   .progress-value--90 {
+    animation: ninty 5s;
     width: 90%; }
   .progress-value--80 {
+    animation: eighty 5s;
     width: 80%; }
   .progress-value--70 {
+    animation: seventy 5s;
     width: 70%; }
   .progress-value--60 {
+    animation: sixty 5s;
     width: 60%; }
   .progress-value--50 {
+    animation: fifty 5s;
     width: 50%; }
   .progress-value--40 {
+    animation: forty 5s;
     width: 40%; }
   .progress-value--30 {
+    animation: thirty 5s;
     width: 30%; }
   .progress-value--20 {
+    animation: twenty 5s;
     width: 20%; }
 
 .btn {
